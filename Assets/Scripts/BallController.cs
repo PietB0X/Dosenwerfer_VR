@@ -24,10 +24,10 @@ public class BallController : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Collider collider = collision.collider;
-         if (collider.gameObject.CompareTag("ThrowDetector")){
+         if (collider.CompareTag("ThrowDetector")){
              wasThrown = true;
         }
-        if (collider.gameObject.CompareTag("Bound") && wasThrown)
+        if (collider.CompareTag("Bound") && wasThrown)
         {
             hasLanded = true;
             ballsLanded++;

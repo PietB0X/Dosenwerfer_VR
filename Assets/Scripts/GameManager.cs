@@ -44,8 +44,6 @@ public class GameManager : MonoBehaviour
             ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 
             ball.transform.position = startingPosition.transform.position;
-
-
         }
         else
         {

@@ -760,7 +760,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 268, y: 63}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &936184616 stripped
@@ -1039,7 +1039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27080349eec248d42b52e6ad08fdd4e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balls: 3
   hits: 0
   hitsText: {fileID: 2034749643}
   endGameText: {fileID: 2086945211}
@@ -1092,7 +1091,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701063916}
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 2.21, y: 4.8, z: 2}
+  m_LocalPosition: {x: 2.54, y: 4.8, z: 2}
   m_LocalScale: {x: 2, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 1713022429}
@@ -1173,7 +1172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a28e01b64ba93e498968f29d3f15d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wasThrown: 0
 --- !u!1 &1713022428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,8 +1354,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878374195}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.064, y: 0.697, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -4.064, y: 0.59, z: 0}
+  m_LocalScale: {x: 2, y: 0, z: 2}
   m_Children: []
   m_Father: {fileID: 1713022429}
   m_RootOrder: 1
@@ -1373,7 +1371,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 0, z: 5}
+  m_Size: {x: 5, y: 0, z: 6}
   m_Center: {x: 0.67, y: -0.074, z: 1.1600004}
 --- !u!23 &1878374199
 MeshRenderer:
@@ -1836,7 +1834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2086945212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1884,14 +1882,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1920,7 +1918,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 297.83783, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3471,7 +3469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a28e01b64ba93e498968f29d3f15d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wasThrown: 0
 --- !u!1 &7236221131456481675
 GameObject:
   m_ObjectHideFlags: 0

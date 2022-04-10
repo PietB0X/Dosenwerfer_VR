@@ -1806,7 +1806,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 		{
 			try
 			{
-				Debug.Log("[OVRManager] HMDLost event");
 				if (HMDLost != null)
 					HMDLost();
 			}
@@ -1840,7 +1839,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 		{
 			try
 			{
-				Debug.Log("[OVRManager] HMDUnmounted event");
 				if (HMDUnmounted != null)
 					HMDUnmounted();
 			}
@@ -1854,7 +1852,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 		{
 			try
 			{
-				Debug.Log("[OVRManager] HMDMounted event");
 				if (HMDMounted != null)
 					HMDMounted();
 			}
@@ -1874,7 +1871,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 		{
 			try
 			{
-				Debug.Log("[OVRManager] VrFocusLost event");
 				if (VrFocusLost != null)
 					VrFocusLost();
 			}
@@ -1888,7 +1884,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 		{
 			try
 			{
-				Debug.Log("[OVRManager] VrFocusAcquired event");
 				if (VrFocusAcquired != null)
 					VrFocusAcquired();
 			}
@@ -1922,7 +1917,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 		{
 			try
 			{
-				Debug.Log("[OVRManager] InputFocusAcquired event");
 				if (InputFocusAcquired != null)
 					InputFocusAcquired();
 			}
@@ -1952,7 +1946,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 			}
 			catch (Exception e)
 			{
-				Debug.LogError("Caught Exception: " + e);
 			}
 
 			prevAudioOutId = audioOutId;
@@ -1974,7 +1967,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 			}
 			catch (Exception e)
 			{
-				Debug.LogError("Caught Exception: " + e);
 			}
 
 			prevAudioInId = audioInId;
@@ -1992,7 +1984,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 			}
 			catch (Exception e)
 			{
-				Debug.LogError("Caught Exception: " + e);
 			}
 		}
 
@@ -2000,7 +1991,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 		{
 			try
 			{
-				Debug.Log("[OVRManager] TrackingAcquired event");
 				if (TrackingAcquired != null)
 					TrackingAcquired();
 			}
@@ -2205,7 +2195,6 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 
 	private void OnDestroy()
 	{
-		Debug.Log("[OVRManager] OnDestroy");
 #if UNITY_EDITOR
 		OVRPlugin.SetLogCallback2(null);
 #endif
@@ -2232,13 +2221,11 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 		}
 		else
 		{
-			Debug.Log("[OVRManager] OnApplicationFocus(false)");
 		}
 	}
 
 	private void OnApplicationQuit()
 	{
-		Debug.Log("[OVRManager] OnApplicationQuit");
 	}
 
 #endregion // Unity Messages

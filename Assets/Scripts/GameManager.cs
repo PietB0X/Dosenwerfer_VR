@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hitsText.text = "Knockdowns: " + hits.ToString();
+        hitsText.text = "Knockdowns: " + hits/2;
     }
 
     public void ResetBall()

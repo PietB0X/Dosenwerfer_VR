@@ -7,7 +7,11 @@ public class CanCollider : MonoBehaviour
 {
   void OnTriggerEnter(Collider collider)
   {
-        if (collider.CompareTag("Bound")) GameManager.instance.hits++;
-        
-  }
+        if (collider.CompareTag("Bound"))
+        {
+            GameManager.instance.hits++;
+
+        }
+
+    }
 }

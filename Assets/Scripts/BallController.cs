@@ -10,7 +10,9 @@ public class BallController : MonoBehaviour
     // total count of balls thrown 
 
     // "thrown": ball made it through the throw detection wall
-    public bool wasThrown = false;
+    private bool wasThrown = false;
+    public static int balls = 2;
+
 
 
     void OnTriggerEnter(Collider collider)
@@ -19,11 +21,14 @@ public class BallController : MonoBehaviour
 
         if (collider.CompareTag("ThrowDetector")){
              wasThrown = true;
+            Debug.Log(wasThrown);
         }
         if (collider.CompareTag("Bound") && wasThrown)
         {
             GameManager.instance.ResetBall();
-            GameManager.instance.balls--;
+            balls--;
+            wasThrown = false;
+            Debug.Log(balls);
         }
     }
 

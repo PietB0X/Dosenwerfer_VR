@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public int balls = 2;
     public int hits = 0;
 
     public TextMeshProUGUI hitsText;
@@ -39,8 +38,7 @@ public class GameManager : MonoBehaviour
 
     public void ResetBall()
     {
-        Debug.Log("hallo");
-        if (balls != 0)
+        if (BallController.balls != 0)
         {
             ball.transform.position = startingPosition.transform.position;
             ball.GetComponent<Rigidbody>().velocity = Vector3.zero;

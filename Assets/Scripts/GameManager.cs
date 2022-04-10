@@ -40,8 +40,11 @@ public class GameManager : MonoBehaviour
     {
         if (BallController.balls != 0)
         {
-            ball.transform.position = startingPosition.transform.position;
             ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+
+            ball.transform.position = startingPosition.transform.position;
+
 
         }
         else
@@ -57,7 +60,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("### GAME ENDED! ###");
 
         // reset the game after 3 seconds
-        yield return null;
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

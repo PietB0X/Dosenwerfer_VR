@@ -57,9 +57,13 @@ public class GameManager : MonoBehaviour
         endGameText.SetActive(true);
         Debug.Log("### GAME ENDED! ###");
 
+        BallController.balls = 3;
+
         // reset the game after 3 seconds
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Application.LoadLevel(Application.loadedLevel);
+
     }
 
 

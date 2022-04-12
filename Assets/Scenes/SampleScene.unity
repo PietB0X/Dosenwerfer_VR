@@ -1573,6 +1573,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1147633637}
     m_Modifications:
+    - target: {fileID: 1270516978753984690, guid: 6fbfed7b92817b6449b9ba0a87b29752, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1669623675399569536, guid: 6fbfed7b92817b6449b9ba0a87b29752, type: 3}
       propertyPath: m_Name
       value: Can (2)
@@ -1834,7 +1838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2086945212
 MonoBehaviour:
   m_ObjectHideFlags: 0

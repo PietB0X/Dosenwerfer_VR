@@ -34,11 +34,11 @@ public class HammerCollisionScript : MonoBehaviour
                     
             if (score < ObjVelocity.magnitude/3)
             {
-                score = ObjVelocity.magnitude;
+                score = ObjVelocity.magnitude/3;
                 //Cube.transform.position = new Vector3(0f, score, 0f);
             }
             scoreText.text = "Score: " + score;
-            Cube.GetComponent<Rigidbody>().velocity = new Vector3(0f, ObjVelocity.magnitude / 3, 0f);
+            Cube.GetComponent<Rigidbody>().velocity = new Vector3(0f, ObjVelocity.magnitude/3, 0f);
 
     }
 }

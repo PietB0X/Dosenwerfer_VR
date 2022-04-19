@@ -19,7 +19,7 @@ public class GameManagerRummel : MonoBehaviour
     [HideInInspector] public int currentIndex = -1;
     [HideInInspector] public int score = 0;
     public float moleSpeed = 0.2f;
-    float cntdnw = 100.0f;
+    float cntdnw = 30.0f;
     public TextMeshProUGUI timeText;
     private bool GameEnded = false;
 

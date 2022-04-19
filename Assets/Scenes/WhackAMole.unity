@@ -1886,7 +1886,7 @@ MonoBehaviour:
   endGameText: {fileID: 122427800}
   currentIndex: -1
   score: 0
-  moleSpeed: 0.05
+  moleSpeed: 0.4
   timeText: {fileID: 1109487260}
 --- !u!4 &1731421426
 Transform:

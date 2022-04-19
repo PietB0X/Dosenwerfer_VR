@@ -1,0 +1,11 @@
+Model Information:
+* title:	High Striker
+* source:	https://sketchfab.com/3d-models/high-striker-44e84ce0e3b74445a6e4dff9350ca347
+* author:	Periklis (https://sketchfab.com/periklis)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "High Striker" (https://sketchfab.com/3d-models/high-striker-44e84ce0e3b74445a6e4dff9350ca347) by Periklis (https://sketchfab.com/periklis) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

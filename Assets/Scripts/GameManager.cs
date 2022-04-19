@@ -61,8 +61,8 @@ public class GameManager : MonoBehaviour
 
         // reset the game after 3 seconds
         yield return new WaitForSeconds(3f);
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //Application.LoadLevel(Application.loadedLevel);
 
     }
 
